@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
+
 const Geoapi = () => {
 
 const [geoapi1, setgeoapi1] = React.useState([]);
@@ -23,9 +24,7 @@ const [geoapi1, setgeoapi1] = React.useState([]);
   
 
   return (
-    <div>
-      <h1 style={{textAlign: "center", color:"#d52349"}}>Restricciones Comunidades Autónomas, España</h1>
-        
+    <div>       
             {
                
                 geoapi1.map(item => (

@@ -4,12 +4,11 @@ import { fade, makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
 import Badge from "@material-ui/core/Badge";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-import MenuIcon from "@material-ui/icons/Menu";
+import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
@@ -20,26 +19,27 @@ import Geoapi from "./Components/datosAPI/geoAPI";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Andalucia from "./Components/ComunidadesAutonomas/Comunidades";
 import Andalucia1 from "./Components/ComunidadesAutonomas/Comunidades";
-import covid1 from "./imagenes/covid1.jpeg";
+import Carta1 from "./Components/Cards/Card1";
+import Carta2 from "./Components/Cards/Card2";
 import { Link } from "react-router-dom";
-import { input } from "./Components/Login/Login";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
     backgroundColor: "rgba(34,30,31,0.88)",
-    color: "inherit"
+    color: "inherit",
   },
   menuButton: {
     marginRight: theme.spacing(2),
     backgroundColor: "rgba(34,30,31,0.88)",
-    
+    color: "#ffffff",
   },
   title: {
     display: "none",
     [theme.breakpoints.up("sm")]: {
       display: "block",
-      color: "inherit"
+      color: "inherit",
     },
   },
   search: {
@@ -55,7 +55,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       marginLeft: theme.spacing(3),
       width: "auto",
-      
     },
   },
   searchIcon: {
@@ -84,14 +83,12 @@ const useStyles = makeStyles((theme) => ({
     display: "none",
     [theme.breakpoints.up("md")]: {
       display: "flex",
-      
     },
   },
   sectionMobile: {
     display: "flex",
     [theme.breakpoints.up("md")]: {
       display: "none",
-      
     },
   },
 }));
@@ -201,10 +198,10 @@ function App() {
               <IconButton
                 edge="start"
                 className={classes.menuButton}
-                color="inherit"
+                color="#ffffff"
                 aria-label="open drawer"
               >
-                <MenuIcon />
+                <HomeIcon />
               </IconButton>
             </Link>
             <div className={classes.search}>
@@ -269,13 +266,24 @@ function App() {
           <Route path="/:data" exact>
             <Andalucia1 />
           </Route>
-          <Route path="/" exact>
-            <Geoapi />
-          </Route>
         </Switch>
         {renderMobileMenu}
         {renderMenu}
-        <Geoapi></Geoapi>
+        <h1 style={{ textAlign: "center", color: "#d52349" }}>
+          Restricciones Comunidades Autónomas, España
+        </h1>
+        <div class="container-fluid content-row">
+          <div class="row">
+            <div class="col text-center">
+              <Carta1>
+                <Geoapi></Geoapi>
+              </Carta1>
+            </div>
+            <div class="col">
+              <Carta2></Carta2>
+            </div>
+          </div>
+        </div>
       </div>
     </Router>
   );
