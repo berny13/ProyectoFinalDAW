@@ -23,6 +23,8 @@ import Carta1 from "./Components/Cards/Card1";
 import Carta2 from "./Components/Cards/Card2";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
+import Logarse from "./Components/Login/Login";
+import Registrarse from "./Components/Register/Register";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -129,10 +131,15 @@ function App() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Perfil</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Sobre Nosotros</MenuItem>
       <MenuItem onClick={handleMenuClose}>
-        <Link id="app" to="">
+        <Link id="app" to="/Login">
           Cuenta
+        </Link>
+      </MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <Link id="app" to="/Register">
+          Registrarse
         </Link>
       </MenuItem>
     </Menu>
@@ -263,8 +270,16 @@ function App() {
           </Toolbar>
         </AppBar>
         <Switch>
+        <Route path="/Register" exact>
+          <Registrarse></Registrarse>
+          </Route>
+        <Route path="/Login" exact>
+          <Logarse></Logarse>
+          </Route>
           <Route path="/:data" exact>
-            <Andalucia1 />
+            <Andalucia/>
+          </Route>
+          <Route path="/" exact>
           </Route>
         </Switch>
         {renderMobileMenu}
@@ -274,7 +289,7 @@ function App() {
         </h1>
         <div class="container-fluid content-row">
           <div class="row">
-            <div class="col text-center">
+            <div class="col">
               <Carta1>
                 <Geoapi></Geoapi>
               </Carta1>

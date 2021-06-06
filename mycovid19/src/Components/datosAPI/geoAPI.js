@@ -30,7 +30,7 @@ const [geoapi1, setgeoapi1] = React.useState([]);
                 geoapi1.map(item => (
         
                     <ul  key={item.data}>
-                        <Link to={`/${item.data}`} style={{color:"#252122"}}>
+                        <Link to={`/geoapi/${item.data}`} style={{color:"#252122"}}>
                         {item.CCOM}-{item.COM}
                         </Link>
                     
