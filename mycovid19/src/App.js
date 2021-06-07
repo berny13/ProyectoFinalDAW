@@ -242,8 +242,8 @@ function App() {
           <Route path="/Login" exact>
             <Logarse></Logarse>
           </Route>
-          <Route path="/:data" exact>
-            <Andalucia />
+          <Route path="/:COM" exact>
+            <Andalucia></Andalucia>
           </Route>
           <Route path="/" exact></Route>
         </Switch>
