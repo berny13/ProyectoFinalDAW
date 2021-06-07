@@ -21,8 +21,9 @@ import Andalucia from "./Components/ComunidadesAutonomas/Comunidades";
 import Andalucia1 from "./Components/ComunidadesAutonomas/Comunidades";
 import Carta1 from "./Components/Cards/Card1";
 import Carta2 from "./Components/Cards/Card2";
+import Carta3 from "./Components/Cards/Card3";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 import Logarse from "./Components/Login/Login";
 import Registrarse from "./Components/Register/Register";
 
@@ -156,27 +157,6 @@ function App() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <IconButton aria-label="show 1 new mails" color="inherit">
-          <Badge badgeContent={1} color="secondary">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <Tooltip title="MENSAJES">
-          <p>Mensajes</p>
-        </Tooltip>
-      </MenuItem>
-
-      <Tooltip title="NOTIFICACIONES">
-        <MenuItem>
-          <IconButton aria-label="show 0 new notifications" color="inherit">
-            <Badge badgeContent={1} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
-          <p>Notificaciones</p>
-        </MenuItem>
-      </Tooltip>
       <Tooltip title="CUENTA">
         <MenuItem onClick={handleProfileMenuOpen}>
           <IconButton
@@ -226,23 +206,6 @@ function App() {
             </div>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
-              <Tooltip title="MENSAJES">
-                <IconButton aria-label="show 1 new mails" color="inherit">
-                  <Badge badgeContent={1} color="secondary">
-                    <MailIcon />
-                  </Badge>
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="NOTIFICACIONES">
-                <IconButton
-                  aria-label="show 1 new notifications"
-                  color="inherit"
-                >
-                  <Badge badgeContent={1} color="secondary">
-                    <NotificationsIcon />
-                  </Badge>
-                </IconButton>
-              </Tooltip>
               <Tooltip title="CUENTA">
                 <IconButton
                   edge="end"
@@ -270,24 +233,28 @@ function App() {
           </Toolbar>
         </AppBar>
         <Switch>
-        <Route path="/Register" exact>
-          <Registrarse></Registrarse>
+        <Route path="/Chat" exact>
+            
           </Route>
-        <Route path="/Login" exact>
-          <Logarse></Logarse>
+          <Route path="/Register" exact>
+            <Registrarse></Registrarse>
+          </Route>
+          <Route path="/Login" exact>
+            <Logarse></Logarse>
           </Route>
           <Route path="/:data" exact>
-            <Andalucia/>
+            <Andalucia />
           </Route>
-          <Route path="/" exact>
-          </Route>
+          <Route path="/" exact></Route>
         </Switch>
         {renderMobileMenu}
         {renderMenu}
+        <div class="container p-4">
         <h1 style={{ textAlign: "center", color: "#d52349" }}>
           Restricciones Comunidades Autónomas, España
         </h1>
-        <div class="container-fluid content-row">
+        </div>
+        <div class="container-fluid content-row justify-content-center">
           <div class="row">
             <div class="col">
               <Carta1>
@@ -295,7 +262,8 @@ function App() {
               </Carta1>
             </div>
             <div class="col">
-              <Carta2></Carta2>
+              <Carta2>               
+              </Carta2>
             </div>
           </div>
         </div>
