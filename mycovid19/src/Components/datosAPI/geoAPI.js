@@ -7,6 +7,7 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Button from "@material-ui/core/Button";
 import Slide from '@material-ui/core/Slide';
+import Andalucia from "../ComunidadesAutonomas/Comunidades";
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -59,12 +60,11 @@ const Geoapi = () => {
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle key={item.data} id="alert-dialog-title">
-          <li >{item.COM}</li>
+        <DialogTitle id="alert-dialog-title">
+          <Andalucia key={item.data}>{item.COM}</Andalucia>
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Medidas Actualizandose
           </DialogContentText>
         </DialogContent>
         <DialogActions>

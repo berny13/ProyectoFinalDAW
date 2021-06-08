@@ -167,7 +167,6 @@ function App() {
           >
             <AccountCircle />
           </IconButton>
-          <p>Perfil</p>
         </MenuItem>
       </Tooltip>
     </Menu>
@@ -243,7 +242,7 @@ function App() {
             <Logarse></Logarse>
           </Route>
           <Route path="/:COM" exact>
-            <Andalucia></Andalucia>
+            
           </Route>
           <Route path="/" exact></Route>
         </Switch>
