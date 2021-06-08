@@ -21,6 +21,10 @@ const Geoapi = () => {
     setOpen(true);
   };
 
+  const AbrirProvincia = () => {
+    
+  };
+
   const handleClose = () => {
     setOpen(false);
   };
@@ -48,13 +52,15 @@ const Geoapi = () => {
             {item.CCOM}-{item.COM}
           </Link>
       <Dialog
-        open={open}
+       open={open}
+        TransitionComponent={Transition}
+        keepMounted
         onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
+        aria-labelledby="alert-dialog-slide-title"
+        aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle id="alert-dialog-title">
-          {item.COM}
+        <DialogTitle key={item.data} id="alert-dialog-title">
+          <li >{item.COM}</li>
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">

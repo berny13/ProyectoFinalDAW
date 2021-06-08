@@ -22,7 +22,6 @@ const Andalucia = () => {
 
   return (
     <div>
-      <h1>{COM}</h1>
     </div>
   );
 };
