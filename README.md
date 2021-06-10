@@ -7,7 +7,7 @@ Covid-Status es una web de noticias de la situaci√≥n actual en las CCAA de Espa√
 </br>
 </br>
 
-![App](./imagenes/completo.jpg)
+![App](./Imagenes/completo.jpg)
 </br>
 </br>
 
@@ -49,7 +49,7 @@ Covid-Status utiliza las siguientes tecnologias
 
   | **Backend**                                          | Frontend                                             |
   | ---------------------------------------------------- | ---------------------------------------------------- |
-  | ![dependenciesServer](./imagenes/dependencias.jpg) | ![dependenciesClient](./imagenes.dependenciasback.jpg) |
+  | ![dependenciesServer](./Imagenes/dependencias.jpg) | ![dependenciesClient](./Imagenes/dependencias.jpg) |
 
 
 
@@ -153,7 +153,7 @@ npm start
 
 ### Modelo de datos
 
-![App](./imagenes/diagrama.png)
+![App](./Imagenes/Diagrama%20en%20blanco.png)
 
 
 
@@ -177,7 +177,7 @@ npm start
 ### Screenshots
 
 **Pagina principal**
-![App](./imagenes/completo.jpg)
+![App](./Imagenes/completo.jpg)
 </br>
 </br>
 </br>
@@ -193,7 +193,7 @@ Se aceptan en el enlace anterior
 
 [Crear Issues](https://github.com/berny13/ProyectoFinalDAW/issues) (preferiblemente)
 
-or Email Me: Berny.jimenez.web@adaits.es 
+o al Email  Berny.jimenez.web@adaits.es 
 
 <a name="version"></a>
 
@@ -203,6 +203,6 @@ or Email Me: Berny.jimenez.web@adaits.es
 
 <a name="autors"></a>
 
-## Authors
+## Creador
 
 - **Berny Jimenez** - _Development_ - [Berny](https://github.com/berny13)
