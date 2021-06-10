@@ -7,7 +7,7 @@ Covid-Status es una web de noticias de la situaci√≥n actual en las CCAA de Espa√
 </br>
 </br>
 
-![App](./docs/App.png)
+![App](./imagenes/completo.jpg)
 </br>
 </br>
 
@@ -49,7 +49,7 @@ Covid-Status utiliza las siguientes tecnologias
 
   | **Backend**                                          | Frontend                                             |
   | ---------------------------------------------------- | ---------------------------------------------------- |
-  | ![dependenciesServer](./docs/dependenciesServer.png) | ![dependenciesClient](./docs/dependenciesClient.png) |
+  | ![dependenciesServer](./imagenes/dependencias.jpg) | ![dependenciesClient](./imagenes.dependenciasback.jpg) |
 
 
 
@@ -153,7 +153,7 @@ npm start
 
 ### Modelo de datos
 
-![App](./docs/models.png)
+![App](./imagenes/diagrama.png)
 
 
 
@@ -177,7 +177,7 @@ npm start
 ### Screenshots
 
 **Pagina principal**
-![App](./docs/Home.png)
+![App](./imagenes/completo.jpg)
 </br>
 </br>
 </br>
