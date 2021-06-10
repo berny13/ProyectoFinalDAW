@@ -6,7 +6,7 @@ class Carta3 extends React.Component {
   render() {
     return (
       <div>
-        <div class="card bg-light text-white mb-3">
+        <div class="card bg-light text-white p-4">
           <img class="card-img" src="..." alt="Card image" />
           <h1 style={{ textAlign: "center", color: "#d52349" }}>Bienvenido a nuestro Chat</h1>
           <div id="chat-container">

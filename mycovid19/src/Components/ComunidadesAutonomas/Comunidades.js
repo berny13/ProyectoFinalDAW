@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footeri from "../Footer/Footer";
 
 const Andalucia = () => {
   const { COM } = useParams();

@@ -9,6 +9,7 @@ import Button from "@material-ui/core/Button";
 import Slide from '@material-ui/core/Slide';
 import Andalucia from "../ComunidadesAutonomas/Comunidades";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footeri from "../Footer/Footer";
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -39,7 +40,7 @@ const Geoapi = () => {
 
   const obtenerApi = async () => {
     const dato = await fetch(
-      "https://apiv1.geoapi.es/comunidades?type=JSON&key=&sandbox=1"
+      "https://apiv1.geoapi.es/comunidades?type=JSON&key=ace7ae841a8385807b7b68b3d443aca05b3ab9c04417c0bc8fb8b1d6f8179da1"
     );
     const user = await dato.json();
     console.log(user);
@@ -74,6 +75,7 @@ const Geoapi = () => {
              Cerrar
           </Button>
         </DialogActions>
+        <Footeri></Footeri>
       </Dialog>
         </ul>
       ))}
