@@ -26,6 +26,8 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logarse from "./Components/Login/Login";
 import Registrarse from "./Components/Register/Register";
+import Footeri from "./Components/Footer/Footer";
+import Chats from "./Components/Chat/Chat";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -232,26 +234,22 @@ function App() {
           </Toolbar>
         </AppBar>
         <Switch>
-        <Route path="/Chat" exact>
-            
-          </Route>
+          <Route path="/Chat" exact></Route>
           <Route path="/Register" exact>
             <Registrarse></Registrarse>
           </Route>
           <Route path="/Login" exact>
             <Logarse></Logarse>
           </Route>
-          <Route path="/:COM" exact>
-            
-          </Route>
+          <Route path="/:COM" exact></Route>
           <Route path="/" exact></Route>
         </Switch>
         {renderMobileMenu}
         {renderMenu}
         <div class="container p-4">
-        <h1 style={{ textAlign: "center", color: "#d52349" }}>
-          Restricciones Comunidades Autónomas, España
-        </h1>
+          <h1 style={{ textAlign: "center", color: "#d52349" }}>
+            Restricciones Comunidades Autónomas, España
+          </h1>
         </div>
         <div class="container-fluid content-row justify-content-center">
           <div class="row">
@@ -261,12 +259,14 @@ function App() {
               </Carta1>
             </div>
             <div class="col">
-              <Carta2>               
-              </Carta2>
+              <Carta2></Carta2>
             </div>
           </div>
         </div>
+        <div>
+        </div>
       </div>
+      <Footeri></Footeri>
     </Router>
   );
 }

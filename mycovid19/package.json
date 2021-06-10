@@ -12,6 +12,8 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
     "bootstrap": "^4.6.0",
     "card-deck": "^1.0.1",
     "cors": "^2.8.5",
@@ -21,7 +23,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-card-component": "0.0.1-beta.5.9.0",
-    "react-dom": "^17.0.2",
+    "react-dom-server": "^0.0.5",
     "react-formio": "^4.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
@@ -29,7 +31,7 @@
     "web-vitals": "^1.1.2"
   },
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -55,5 +57,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-dom": "^17.0.2"
   }
 }
