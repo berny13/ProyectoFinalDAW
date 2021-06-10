@@ -6,7 +6,7 @@ const app = express();
 app.set('port', process.env.PORT || 3000);
 
 //static file
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public/build')))
 
 
 //start the server
