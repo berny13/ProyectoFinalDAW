@@ -34,7 +34,7 @@
     "node": "16.x"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node .",
     "login": "npm run build ; node Index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",

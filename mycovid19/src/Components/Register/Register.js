@@ -5,7 +5,7 @@ class Registrarse extends React.Component {
   render() {
     return (
       <div>
-          <Form src="https://jehxlsbniufgcnr.form.io/register" style={{color:"#252122"}} />
+          <Form style={{color:"#252122"}}  src="https://jehxlsbniufgcnr.form.io/register"/>
       </div>
     );
   }
