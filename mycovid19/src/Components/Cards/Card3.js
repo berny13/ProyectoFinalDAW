@@ -1,5 +1,6 @@
 import React from "react";
 import './main.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class Carta3 extends React.Component {
   render() {

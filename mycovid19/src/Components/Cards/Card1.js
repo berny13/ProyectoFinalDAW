@@ -5,8 +5,8 @@ class Carta1 extends React.Component {
   render() {
     return (
       <div>
-        <div class="card-group justify-content-center ">
-          <div class="card">
+        <div class="card-group justify-content-center bg-light">
+          <div class="card bg-light">
             <div class="card-body">
               <h3 class="card-title" textAlign="center">
                 Comunidades

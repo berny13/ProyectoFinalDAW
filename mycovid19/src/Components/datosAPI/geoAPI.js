@@ -8,6 +8,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Button from "@material-ui/core/Button";
 import Slide from '@material-ui/core/Slide';
 import Andalucia from "../ComunidadesAutonomas/Comunidades";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -59,6 +60,7 @@ const Geoapi = () => {
         onClose={handleClose}
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
+        class="bg-light"
       >
         <DialogTitle id="alert-dialog-title">
           <Andalucia key={item.data}>{item.COM}</Andalucia>
@@ -69,7 +71,7 @@ const Geoapi = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
-            Cerrar
+             Cerrar
           </Button>
         </DialogActions>
       </Dialog>

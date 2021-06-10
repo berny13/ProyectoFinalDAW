@@ -266,7 +266,6 @@ function App() {
         <div>
         </div>
       </div>
-      <Footeri></Footeri>
     </Router>
   );
 }

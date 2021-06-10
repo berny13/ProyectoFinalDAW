@@ -1,6 +1,6 @@
-import { Link } from "@material-ui/core";
 import React from "react";
 import { useParams } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Andalucia = () => {
   const { COM } = useParams();
@@ -20,7 +20,7 @@ const Andalucia = () => {
   }, []);
 
   return (
-    <div>
+    <div class=" justify-content-center .bg-transparent">
       <h1>{COM}</h1>
       <p>
         Toque de queda: No 

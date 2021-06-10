@@ -7,8 +7,8 @@ class Carta2 extends React.Component {
   render() {
     return (
       <div>
-        <div class="card-group">
-          <div class="card">
+        <div class="card-group bg-light">
+          <div class="card bg-light">
             <img class="card-img-top" src={descarga} alt="Card image cap" />
             <div class="card-body">
               <h3 class="card-title">Restricciones</h3>
