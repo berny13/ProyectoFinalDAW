@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "94aa8068-a2bf-4b4a-9764-38bd9a4f783a",
+		"name": "FinalDAWPostMan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener Comunidades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apiv1.geoapi.es/comunidades?type=JSON&key=ace7ae841a8385807b7b68b3d443aca05b3ab9c04417c0bc8fb8b1d6f8179da1",
+					"protocol": "https",
+					"host": [
+						"apiv1",
+						"geoapi",
+						"es"
+					],
+					"path": [
+						"comunidades"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "JSON"
+						},
+						{
+							"key": "key",
+							"value": "ace7ae841a8385807b7b68b3d443aca05b3ab9c04417c0bc8fb8b1d6f8179da1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener una Comunidad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apiv1.geoapi.es/provincias?CCOM=01&type=JSON&key=ace7ae841a8385807b7b68b3d443aca05b3ab9c04417c0bc8fb8b1d6f8179da1",
+					"protocol": "https",
+					"host": [
+						"apiv1",
+						"geoapi",
+						"es"
+					],
+					"path": [
+						"provincias"
+					],
+					"query": [
+						{
+							"key": "CCOM",
+							"value": "01"
+						},
+						{
+							"key": "type",
+							"value": "JSON"
+						},
+						{
+							"key": "key",
+							"value": "ace7ae841a8385807b7b68b3d443aca05b3ab9c04417c0bc8fb8b1d6f8179da1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar una provincia",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://apiv1.geoapi.es/municipios?CPRO=28&type=JSON&key=ace7ae841a8385807b7b68b3d443aca05b3ab9c04417c0bc8fb8b1d6f8179da1",
+					"protocol": "https",
+					"host": [
+						"apiv1",
+						"geoapi",
+						"es"
+					],
+					"path": [
+						"municipios"
+					],
+					"query": [
+						{
+							"key": "CPRO",
+							"value": "28"
+						},
+						{
+							"key": "type",
+							"value": "JSON"
+						},
+						{
+							"key": "key",
+							"value": "ace7ae841a8385807b7b68b3d443aca05b3ab9c04417c0bc8fb8b1d6f8179da1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add provincia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://apiv1.geoapi.es/municipios?CPRO=28&type=JSON&key=ace7ae841a8385807b7b68b3d443aca05b3ab9c04417c0bc8fb8b1d6f8179da1",
+					"protocol": "https",
+					"host": [
+						"apiv1",
+						"geoapi",
+						"es"
+					],
+					"path": [
+						"municipios"
+					],
+					"query": [
+						{
+							"key": "CPRO",
+							"value": "28"
+						},
+						{
+							"key": "type",
+							"value": "JSON"
+						},
+						{
+							"key": "key",
+							"value": "ace7ae841a8385807b7b68b3d443aca05b3ab9c04417c0bc8fb8b1d6f8179da1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
